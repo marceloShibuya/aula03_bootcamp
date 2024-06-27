@@ -3,13 +3,13 @@
 # que todos os registros tenham valores positivos para `quantidade` e `preço`. 
 # Escreva um programa que verifique esses campos e imprima "Dados válidos" se ambos 
 # forem positivos ou "Dados inválidos" caso contrário.
-quantidade = 1
-preco = 2
+# quantidade = 1
+# preco = 2
 
-if quantidade > 0 and preco > 0:
-    print("Dados válidos")
-else:
-    print("Dados inválidos")
+# if quantidade > 0 and preco > 0:
+#     print("Dados válidos")
+# else:
+#     print("Dados inválidos")
 
 ### Exercício 2: Classificação de Dados de Sensor
 # Imagine que você está trabalhando com dados de sensores IoT. 
@@ -36,6 +36,21 @@ else:
 
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
+texto = "hoje e nossa segunda aula do bootcamp, bootcamp de python"
+texto_substituido = texto.replace(",","")
+palavras = texto_substituido.split()
+contagem_palavras = {}
+
+for palavra in palavras:
+    if palavra in contagem_palavras:
+        contagem_palavras[palavra] = contagem_palavras[palavra] +1
+    else:
+        contagem_palavras[palavra] = 1
+        
+        
+print(contagem_palavras)
+
+
 
 ### Exercício 7. Normalização de Dados
 # Objetivo:** Normalizar uma lista de números para que fiquem na escala de 0 a 1.
