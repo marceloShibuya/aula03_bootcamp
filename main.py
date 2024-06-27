@@ -19,9 +19,20 @@
 #     print(i)
 
 #2
-lista_de_alunos = ["Marcelo","Ricardo","Denise"]
+# lista_de_alunos = ["Marcelo","Ricardo","Denise"]
 
-for i in lista_de_alunos:
-    print(i)
+# for i in lista_de_alunos:
+#     print(i)
+
+
+#EXEMPLO DE WHILE
+import time
+
+condicao = True
+
+while condicao:
+    print("Execute minha ETL")
+    time.sleep(5)
+
 
 

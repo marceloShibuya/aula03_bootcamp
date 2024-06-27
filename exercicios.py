@@ -37,8 +37,8 @@
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
 texto = "hoje e nossa segunda aula do bootcamp, bootcamp de python"
-texto_substituido = texto.replace(",","")
-palavras = texto_substituido.split()
+texto_replace = texto.replace(",","")
+palavras = texto_replace.split()
 contagem_palavras = {}
 
 for palavra in palavras:
@@ -46,9 +46,29 @@ for palavra in palavras:
         contagem_palavras[palavra] = contagem_palavras[palavra] +1
     else:
         contagem_palavras[palavra] = 1
-        
-        
+
 print(contagem_palavras)
+
+
+
+
+
+
+
+
+# texto = "hoje e nossa segunda aula do bootcamp, bootcamp de python"
+# texto_substituido = texto.replace(",","")
+# palavras = texto_substituido.split()
+# contagem_palavras = {}
+
+# for palavra in palavras:
+#     if palavra in contagem_palavras:
+#         contagem_palavras[palavra] = contagem_palavras[palavra] +1
+#     else:
+#         contagem_palavras[palavra] = 1
+        
+        
+# print(contagem_palavras)
 
 
 
