@@ -4,13 +4,13 @@ bonus_valido = False
 
 while nome_valido is not True:
     try:
-        #nome = input("Digite seu nome: ")
-        nome = "Marcelo"
+        nome = input("Digite seu nome: ")
+        #nome = 3
 
         if len(nome) == 0:
             raise ValueError("O campo não pode estar vazio")
-        elif any(char.isdigit() for char in nome):
-            raise ValueError("Nome inválido, não pode ser digito")
+        elif nome.isdigit():
+            raise ValueError("Nome inválido, não pode ser número")        
         else:
             print("Nome válido:", nome)
             nome_valido = True
