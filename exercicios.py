@@ -35,10 +35,10 @@
 # como `log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}`, 
 # escreva um programa que imprima a mensagem se a severidade for 'ERROR'.
 
-log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}
+# log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}
 
-if log['level'] == 'ERROR':
-    print("ERROR")
+# if log['level'] == 'ERROR':
+#     print("ERROR")
 
 
 ### Exercício 4: Validação de Dados de Entrada
@@ -46,6 +46,18 @@ if log['level'] == 'ERROR':
 # você precisa garantir que cada usuário tenha idade entre 18 e 65 anos e tenha 
 # fornecido um email válido. Escreva um programa que valide essas condições 
 # e imprima "Dados de usuário válidos" ou o erro específico encontrado.
+
+idade = 66
+email = 'marcelo.shibuya@novo.com'
+
+if idade < 18 or idade > 65:
+    print('Idade não é válido.')
+elif not email.__contains__("@") or not email.__contains__(".") or not email.__contains__(".com"):
+    print("Email não é válido")
+else:
+    print("Dados válidos.")
+
+
 
 ### Exercício 5: Detecção de Anomalias em Dados de Transações
 # Você está trabalhando em um sistema de detecção de fraude e precisa identificar 
