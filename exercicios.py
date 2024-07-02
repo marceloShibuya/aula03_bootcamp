@@ -15,6 +15,21 @@
 # Imagine que você está trabalhando com dados de sensores IoT. 
 # Os dados incluem medições de temperatura. Você precisa classificar cada leitura 
 # como 'Baixa', 'Normal' ou 'Alta'. Considerando que:
+# Temperatura < 18°C é 'Baixa'
+# Temperatura >= 18°C e <= 26°C é 'Normal'
+# Temperatura > 26°C é 'Alta'
+
+temperatura = 32
+
+if temperatura < 18:
+    print("Temperatura Baixa")
+elif temperatura >= 18 and temperatura <= 26:
+    print("Temperatura Normal") 
+else:
+    print("Temperatura Alta")      
+
+
+
 
 ### Exercício 3: Filtragem de Logs por Severidade
 # Você está analisando logs de uma aplicação e precisa filtrar mensagens 
@@ -36,18 +51,18 @@
 
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
-texto = "hoje e nossa segunda aula do bootcamp, bootcamp de python"
-texto_replace = texto.replace(",","")
-palavras = texto_replace.split()
-contagem_palavras = {}
+# texto = "hoje e nossa segunda aula do bootcamp, bootcamp de python"
+# texto_replace = texto.replace(",","")
+# palavras = texto_replace.split()
+# contagem_palavras = {}
 
-for palavra in palavras:
-    if palavra in contagem_palavras:
-        contagem_palavras[palavra] = contagem_palavras[palavra] +1
-    else:
-        contagem_palavras[palavra] = 1
+# for palavra in palavras:
+#     if palavra in contagem_palavras:
+#         contagem_palavras[palavra] = contagem_palavras[palavra] +1
+#     else:
+#         contagem_palavras[palavra] = 1
 
-print(contagem_palavras)
+# print(contagem_palavras)
 
 
 
@@ -100,3 +115,6 @@ print(contagem_palavras)
 
 ### Exercício 15. Processamento de Dados com Condição de Parada
 # Processar itens de uma lista até encontrar um valor específico que indica a parada.
+
+
+
