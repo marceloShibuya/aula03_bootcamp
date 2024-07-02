@@ -19,16 +19,14 @@
 # Temperatura >= 18°C e <= 26°C é 'Normal'
 # Temperatura > 26°C é 'Alta'
 
-temperatura = 32
+# temperatura = 32
 
-if temperatura < 18:
-    print("Temperatura Baixa")
-elif temperatura >= 18 and temperatura <= 26:
-    print("Temperatura Normal") 
-else:
-    print("Temperatura Alta")      
-
-
+# if temperatura < 18:
+#     print("Temperatura Baixa")
+# elif temperatura >= 18 and temperatura <= 26:
+#     print("Temperatura Normal") 
+# else:
+#     print("Temperatura Alta")      
 
 
 ### Exercício 3: Filtragem de Logs por Severidade
@@ -36,6 +34,12 @@ else:
 # com severidade 'ERROR'. Dado um registro de log em formato de dicionário 
 # como `log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}`, 
 # escreva um programa que imprima a mensagem se a severidade for 'ERROR'.
+
+log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}
+
+if log['level'] == 'ERROR':
+    print("ERROR")
+
 
 ### Exercício 4: Validação de Dados de Entrada
 # Antes de processar os dados de usuários em um sistema de recomendação, 
