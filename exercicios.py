@@ -64,49 +64,29 @@
 # a R$ 10.000 ou se ocorrer fora do horário comercial (antes das 9h ou depois das 18h). 
 # Dada uma transação como `transacao = {'valor': 12000, 'hora': 20}`, verifique se ela é suspeita.
 
-transacao = {'valor': 10001, 'hora': 19}
+# transacao = {'valor': 10001, 'hora': 19}
 
-if transacao['valor'] > 10000 or transacao['hora'] < 9 or transacao['hora'] > 18:
-    print("Transação suspeita")
-else:
-    print("Transação permitida")  
+# if transacao['valor'] > 10000 or transacao['hora'] < 9 or transacao['hora'] > 18:
+#     print("Transação suspeita")
+# else:
+#     print("Transação permitida")  
 
 
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
-# texto = "hoje e nossa segunda aula do bootcamp, bootcamp de python"
-# texto_replace = texto.replace(",","")
-# palavras = texto_replace.split()
-# contagem_palavras = {}
 
-# for palavra in palavras:
-#     if palavra in contagem_palavras:
-#         contagem_palavras[palavra] = contagem_palavras[palavra] +1
-#     else:
-#         contagem_palavras[palavra] = 1
+texto = "hoje e nossa segunda aula do bootcamp, bootcamp de python"
+texto_substituido = texto.replace(",","")
+palavras = texto_substituido.split()
+contagem_palavras = {}
 
-# print(contagem_palavras)
-
-
-
-
-
-
-
-
-# texto = "hoje e nossa segunda aula do bootcamp, bootcamp de python"
-# texto_substituido = texto.replace(",","")
-# palavras = texto_substituido.split()
-# contagem_palavras = {}
-
-# for palavra in palavras:
-#     if palavra in contagem_palavras:
-#         contagem_palavras[palavra] = contagem_palavras[palavra] +1
-#     else:
-#         contagem_palavras[palavra] = 1
+for palavra in palavras:
+    if palavra in contagem_palavras:
+        contagem_palavras[palavra] = contagem_palavras[palavra] +1
+    else:
+        contagem_palavras[palavra] = 1
         
-        
-# print(contagem_palavras)
+print(contagem_palavras)
 
 
 
